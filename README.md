@@ -9,4 +9,4 @@ David Ian
 Renato Santana
 Arthur Tannus
 
-Trabalho destinado a pagina web, inspirada no "rotten-potato"(pagina de avaliações de filmes)
+Trabalho destinado a pagina web, inspirada no "rotten-tomatoes"(pagina de avaliações de filmes)
