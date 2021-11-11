@@ -8,7 +8,7 @@ Prof. Ricardo Araujo
 
 Alunos:
 
-Ian Pedro (Progrmação e desenvolvimento do front e back, além de ajustes no codigo html)
+Ian Pedro (Programação e desenvolvimento do front e back, além de ajustes no codigo html)
 
 David Ian (Desenvolvimento do front(incluindo desing e html))
 
