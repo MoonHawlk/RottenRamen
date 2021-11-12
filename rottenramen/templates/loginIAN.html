@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Inseria seus dados para acessar a plataforma</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <form method="POST" action="" class="border p-4 mt-2">
+                    {{ form_login.csrf_token }}
+                    <legend>Login</legend>
+                    <fieldset>
+                        <div class="form-group">
+                            {{ form_login.email.label(class="form-control-label") }}
+                            {% if form_login.email.errors %}
+                                {{ form_login.email(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_login.email.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_login.email(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form_login.password.label(class="form-control-label") }}
+                            {% if form_login.password.errors %}
+                                {{ form_login.password(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_login.password.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_login.password(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form_login.remember_data.label(class="form-check-label") }}
+                            {{ form_login.remember_data(class="form-check-input") }}
+                        </div>
+                    </fieldset>
+                    {{ form_login.button_submit_login(class="btn btn-primary mt-2") }}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

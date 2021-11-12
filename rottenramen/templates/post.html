@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+        <div class="row">
+            <div class="col">
+                <form method="POST" action="" class="border p-4 mt-2">
+                    {{ form.csrf_token }}
+                    <fieldset>
+                        <div class="form-group">
+                            {{ form.body.label(class="form-control-label") }}
+                            {% if form.body.errors %}
+                                {{ form.body(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.body.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form.body(class="form-control") }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    {{ form.button_submit_post(class="btn btn-primary mt-2") }}
+                    <hr>
+                    <div class="container">
+                        {% for post in posts %}
+                        <div class="row border mt-4 p-3">
+                            <div class="col col-3">
+                                <div class="image pe-2"> <img src="{{ url_for('static', filename='profile_photos/{}'.format(post.author.profile_photo)) }}" class="rounded" width="155"> </div>
+                                <strong>{{ post.author.username }}</strong>
+                            </div>
+                            <div class="col col-9">
+                                <p>{{ post.body }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

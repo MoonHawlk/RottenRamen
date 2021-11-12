@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotten Ramen</title>
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width-device.width, initial-escale=1.0">
+    <link rel="stylesheet"  type="text/css"  href="{{ url_for('static', filename = 'styleCadastro.css') }}">
+
+    {% block head %}
+    {% endblock %}
+</head>
+
+{% block body %}
+    <div class="container">
+        <h1>Faça seu cadastro para ter acesso à plataforma</h1>
+        <hr>
+         <div class="socialMedia">
+            <div class="social">
+                <a href=""><img src="img-cadastro/google.png" alt=""></a>
+                <a href=""><img src="img-cadastro/facebook.png" alt=""></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="divForm">
+                <form method="POST" action="" class="border p-4 mt-2">
+                    {{ form_creataccount.csrf_token }}
+                    <legend>Criar Conta</legend>
+                    <fieldset>
+                        <div class="form-group">
+                            {{ form_creataccount.username.label(class="form-control-label") }}
+                            {% if form_creataccount.username.errors %}
+                                {{ form_creataccount.username(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_creataccount.username.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_creataccount.username(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form_creataccount.email.label(class="form-control-label") }}
+                            {% if form_creataccount.email.errors %}
+                                {{ form_creataccount.email(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_creataccount.email.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_creataccount.email(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form_creataccount.password.label(class="form-control-label") }}
+                            {% if form_creataccount.password.errors %}
+                                {{ form_creataccount.password(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_creataccount.password.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_creataccount.password(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form_creataccount.confirmation_password.label(class="form-control-label") }}
+                            {% if form_creataccount.confirmation_password.errors %}
+                                {{ form_creataccount.confirmation_password(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form_creataccount.confirmation_password.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_creataccount.confirmation_password(class="form-control") }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                      <div class="botao">
+                        {{ form_creataccount.button_submit_creataccount(class="btn btn-primary mt-2") }}
+                      </div>
+                      <section class="images">
+                          <img src="img-cadastro/rotten.png" alt="">
+                          <div class="circle"></div>
+                          <div class="circle2"></div>
+                      </section>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block body %}
+        <div class="container">
+            <div class="hero">
+                <div class="banner">
+                    <img src="{{ url_for('static', filename = 'banne.png') }}">
+                    <span class="subtitle">Para proteger sua família de um poderoso chefão do tráfico,<br> o habilidoso ladrão Mehdi e sua gangue acabam envolvidos em <br> violenta disputa por território.<br></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!--banner-->
+        
+
+        <div class="botoes">
+            <button class="btn"><i class="fa fas-play"></i>Assistir</button>
+            <button class="btn"><i class="fa fas-plus"></i>Minha Lista</button>
+        </div>
+
+        <!--categorias-->
+        <div class="categorias">
+            <span>Recomendados</span>
+            <div class="slider">
+
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'recomendados1.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'recomendados2.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'recomendados3.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'recomendados4.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'recomendados5.jpg') }}">
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="categorias">
+            <span>Em Alta</span>
+            <div class="slider">
+
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'alta1.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'alta2.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'alta3.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'alta4.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'alta5.jpg') }}">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="categorias">
+            <span>Séries</span>
+            <div class="slider">
+
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'serie1.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'serie2.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'serie3.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'serie4.jpg') }}">
+                </div>
+                <div class="filme">
+                    <img src="{{ url_for('static', filename = 'serie5.jpg') }}">
+                </div>
+                
+            </div>
+        </div>
+            
+        <!--footer-->
+        <div class="redeSocial">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+{% endblock %}
+

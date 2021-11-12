@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Pooppins", sans-serif;
+}
+body{
+    background-color: #e4e3e3 ;
+    color: rgb(81,81,81);
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+main{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.divForm{
+    padding-left: 60%;
+}
+main h1{
+    color: #F2B705;
+    font-size: 50px;
+    margin-bottom: 3rem;
+    padding-left: 30%;
+
+}
+main .social a{
+    text-decoration: none;
+}
+main .social img{
+    max-width: 36px;
+    margin-left: 3rem;
+}
+main .social{
+    display: flex;
+    align-content: center;
+}
+main .social a:first-child img{
+    margin-left: 0;
+
+}
+.socialMedia{
+    padding-left: 60%;
+
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+main form label span{
+    font-size:1.1rem;
+    margin-top: 2rem;
+}
+main form input{
+    border: 0;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+    min-width: 180px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    border-radius: 0;
+    width: 300px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(81,81,81);
+    font-family: "Pooppins", sans-serif;
+}
+
+main span{
+    padding-bottom: 20px;
+}
+input:focus{
+    border-bottom: 2px solid #F27405;
+}
+
+main input::placeholder{
+    color:transparent;
+}
+
+main .division span{
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+}
+main .division span::before{
+    position:absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    background-color: rgb(81,81,81);
+    bottom: 75%;
+    right: 40px;
+}
+main .division span::after{
+    position:absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    background-color: rgb(81,81,81);
+    bottom: 75%;
+    left: 40px;
+}
+
+main input:required:invalid + label{
+    color:#F27405;
+}
+main input:focus:required:invalid{
+    border-bottom: 2px solid#F27405;
+}
+main input:required:invalid + label:before{
+    content: '*';
+}
+main input:focus + label,
+main input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #F27405;
+}
+main form input[type="submit"] {
+    cursor: pointer;
+    background-color: #F27405;
+    border-radius: 30px;
+    color: #ffff;
+    border: none;
+    height: 50px;
+    margin-top: 4rem;
+    max-width: 50%;
+}
+main form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #730202;
+    color: #fff;
+
+}
+
+.division{
+    padding-left: 60%;
+    padding-top: 20px;
+}
+
+.images img{
+    max-width: 800px;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+section.images{
+    display: flex;
+    align-items: flex;
+}
+section.images .circle{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background: linear-gradient(45deg, #730202, #F2B705);
+    clip-path: circle(20% at right 0%);
+}
+section.images .circle2{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background: linear-gradient(45deg, #730202, #F2B705);
+    clip-path: circle(20% at left 120%);
+}
