@@ -1,0 +1,35 @@
+<nav>
+  <link rel="stylesheet"  type="text/css"  href="{{ url_for('static', filename = 'navbarstyle.css') }}">
+  <div class="logo">
+      <a href="{{ url_for('home') }}"> <img src="{{ url_for('static', filename = 'rotten.png') }}" alt=""></a>
+  </div>
+  <div class="menu">
+    <!---menu esquerdo-->
+    <div class="menuEsquerdo">
+        <ul>
+  
+            <li href="javascript:void(0);" class="arrow">Inicio</li>
+            <li aria-current="page" href="javascript:void(0);" class="arrow">Animes</li>
+            <li href="javascript:void(0);" class="arrow">Categorias</li>
+            <li href="javascript:void(0);" class="arrow">Minha Lista</li>
+  
+        </ul>
+    </div>
+    <!---menu direita-->
+    <div class="menuDireito">
+      <ul>
+        {% if current_user.is_authenticated %}
+            <li> <a href="{{ url_for('creat_post') }}">Comentar Episódio</a> </li>
+            <li> <a href="{{ url_for('profile') }}">Meu Perfil</a></li>
+            <li>
+              <a href="{{ url_for('logout') }}">Sair</a>
+            </li>
+        {% else %}
+          <li> <a href="{{ url_for('login') }}">Login</a> </li>
+          <li> <a href="{{ url_for('register') }}">Criar Conta</a> </li>
+        {% endif %}
+      </ul>
+    </div>
+  
+  </div>
+</nav>

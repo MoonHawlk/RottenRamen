@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+            <div class="container">
+                <div class="row border mt-4 p-3">
+                    <div class="col col-3">
+                        <div class="image pe-2"> <img src="{{ url_for('static', filename='profile_photos/{}'.format(post.author.profile_photo)) }}" class="rounded" width="155"> </div>
+                        <strong>{{ post.author.username }}</strong>
+                    </div>
+                    <div class="col col-9">
+                        <p>{{ post.body }}</p>
+                    </div>
+                </div>
+            </div>
+{% endblock %}
