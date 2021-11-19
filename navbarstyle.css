@@ -1,0 +1,46 @@
+.logo img{
+    width: 15rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menuEsquerdo,
+.menuDireito{
+    display: flex;
+    color: black;
+    font-size: 0.87rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li{
+    padding-right: 0.9rem;
+}
+
+.menu .user img{
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.menu .user{
+    display: flex;
+    align-items: center;
+}
+
+.menu i{
+    font-size: 20px;
+}
+
+.menuDireito ul li{
+    padding-right: 1.5rem;
+}

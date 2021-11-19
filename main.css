@@ -1,0 +1,337 @@
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9;
+}
+
+.number1 {
+    font-weight: 500px;
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0, auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e4e3e3;
+}
+
+
+
+
+
+.hero{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0.3rem;
+}
+.hero-page{
+    width: 100%;
+    margin: 0 auto;
+    height: 20%;
+    padding: 0.3rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 15rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menuEsquerdo,
+.menuDireito{
+    display: flex;
+    color: white;
+    font-size: 0.87rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li{
+    padding-right: 0.9rem;
+}
+
+.menu .user img{
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.menu .user{
+    display: flex;
+    align-items: center;
+}
+
+.menu i{
+    font-size: 20px;
+}
+
+.menuDireito ul li{
+    padding-right: 1.5rem;
+}
+
+.banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.2)20%,
+        rgba(20, 20, 20, 0.2)80%,
+        rgba(20, 20, 20, 1)100%
+    ),
+    url(banner.jpg);
+    background-size: cover;
+
+    padding-right: -500px;
+}
+
+.banner .poster{
+    width: 30px;
+}
+
+.banner .subtitle{
+    font-size: 1.25rem;
+    color: #ffff;
+    padding-top: .5rem;
+}
+
+.botoes{
+    margin-top: 0rem;
+}
+
+.botoes .btn{
+    color: rgb(0, 0, 0);
+    padding: 0.6rem 2rem;
+    margin-right: .75rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    background: rgba(223, 221, 221, 0.753);
+    font-family: inherit;
+    font-size: 100%;
+    border: 0;
+}
+
+.botoes .btn i{
+    margin-right: 0.5rem;
+}
+
+.categorias{
+    height: 200px;
+
+}
+
+.categorias span{
+    color: #545759;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 600;
+
+}
+
+.slider{
+    margin-top: .8rem;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 3.75rem;
+    right:  0;
+}
+
+.filme img{
+    padding-top: 10px;
+    padding-right: 5px;
+    max-width: 100%;
+}
+.categorias{
+    padding-top: 30px;
+}
+
+.redeSocial{
+    color: #e5e5e5e5;
+    padding-top: 180px;
+    width: 200px;
+    padding-left: 49%;
+    display: flex;
+}
+.final{
+    color: #e5e5e5e5;
+    font-size: 10px;
+    padding-left: 40%;
+    align-items: center;
+}
+.final h4{
+    padding-left: 13%;
+}
+.banner img{
+    width: 50%;
+    display: flex;
+}
+
+.episodio{
+    display: flex;
+    padding-left: 40px;
+    color: #ffff;
+}
+
+.texto{
+    padding-left: 30px;
+}
+
+.avaliacao{
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.avaliacao img{
+    width: 80px;
+    padding-right: 5px;
+}
+label,
+textarea {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 5px;
+    width: 400px;
+    height: 100px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: black;
+}
+
+label {
+    padding-top: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.interacao{
+    padding-top: 100px;
+    padding-left: 45px;
+    color: #ffff;
+}
+
+.identificacao{
+    display: flex;
+}
+
+.identificacao h5{
+    padding-left: 20px;
+
+}
+
+.interacao img{
+    width: 50px;
+    height: 50px;
+}
+
+.botaoInteracao{
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+#formularioBotaoEnviar{
+    width: 100px;
+    color: #ffff;
+    background-color: rgb(48, 47, 47);
+    border: 0px;
+}
+
+.info{
+    color: #ffff;
+    font-size: 15px;
+    padding-left: 45px;
+}
+.teste{
+    font-weight:bold;
+}
+.conteudoInfo1{
+    padding-left: 40px;
+}
+.conteudoInfo2{
+    padding-left: 55px;
+}
+.conteudoInfo3{
+    padding-left: 40px;
+}
+.conteudoInfo4{
+    padding-left: 28px;
+}
+.conteudoInfo{
+    padding-left: 200px;
+}
+
+.elenco{
+    color: #ffff;
+    display: flex;
+    padding-left: 50px;
+
+}
+.elenco img{
+    width: 100px;
+}
+.personagem{
+    padding-right: 25px;
+}
+.conteudoElenco h2{
+    color: #ffff;
+    padding-left: 45px;
+}
+.personagem span{
+    color: rgb(202, 202, 202);
+    font-size: 12px;
+}
