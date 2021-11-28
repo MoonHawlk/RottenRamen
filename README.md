@@ -31,5 +31,5 @@ Dentre elas estão:
 -
 Além de outras infomações que estão citadas no arquivo **"info.txt"** que pode ser encontrado na pasta rottenramen.
 
-Em caso de dúvidas, assistir video explicativo encontrado no canal do Youtube () ou recorer a um dos integrantes do grupo (Filipe:https://github.com/MoonHawlk ,Ian: , David: ).
+Em caso de dúvidas, procurar no arquvio **"info.txt"** ou recorer a um dos integrantes do grupo (Filipe:https://github.com/MoonHawlk ,Ian: , David: ).
 
