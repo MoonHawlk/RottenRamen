@@ -22,16 +22,37 @@ Nesse site o usuário é possível acrescentar novos animes ao catálogo.
 
 Nota de uso:
 
-O arquivo a ser baixado é o **"RottenRamen.zip"**
+O arquivo a ser baixado é o **"RottenRamen_css.zip"** e **"RottenRamen_mainarq.zip"**
 
 Para usar essa aplicação Web, você deve ter o python 3.8 ou superior instalado em sua máquina, além disso deve baixar algumas bibliotecas para funionamento correto.
 Dentre elas estão:
-- SQL Alquemy
-- Flask
--
--
--
-Além de outras infomações que estão citadas no arquivo **"info.txt"** que pode ser encontrado na pasta rottenramen.
 
-Em caso de dúvidas, procurar no arquvio **"info.txt"** ou recorer a um dos integrantes do grupo (Filipe:https://github.com/MoonHawlk ,Ian:https://github.com/IanX98 , David:https://github.com/Davidian19 ).
+- bcrypt 3.2.0
+- cffi 1.15.0
+- click 8.0.1
+- colorama 0.4.4
+- dnspython==2.1.0
+- email-validator==1.1.3
+- Flask 2.0.1
+- Flask-Bcrypt 0.7.1
+- Flask-Login 0.5.0
+- Flask-SQLAlchemy 2.5.1
+- Flask-WTF 0.15.1
+- greenlet 1.1.2
+- gunicorn 20.1.0
+- idna 3.2
+- itsdangerous 2.0.1
+- Jinja2 3.0.1
+- MarkupSafe 2.0.1
+- Pillow 8.4.0
+- pycparser 2.20
+- pytz 2021.3
+- six 1.16.0
+- SQLAlchemy 1.4.25
+- Werkzeug 2.0.1
+- WTForms 2.3.3
+
+
+
+Em caso de dúvidas, procurar no arquvio **"README.md"** ou recorer a um dos integrantes do grupo (Filipe:https://github.com/MoonHawlk ,Ian:https://github.com/IanX98 , David:https://github.com/Davidian19 ).
 
